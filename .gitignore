@@ -1,0 +1,28 @@
+# Dependencias locales; versionar .terraform.lock.hcl
+**/.terraform/
+
+# Estado, respaldos y planes: contienen datos de la infraestructura
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+
+# Credenciales y claves locales
+.env
+.env.*
+*.pem
+*.key
+*.key.pub
+globomatics-ec2
+globomatics-ec2.pub
+
+# Copias privadas previas a migraciones del backend
+state-backups/
+*.tflock
+.terraform.tfstate.lock.info
+
+# Documentación local: no publicar en GitHub
+/docs/
